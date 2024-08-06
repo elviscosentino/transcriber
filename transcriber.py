@@ -26,6 +26,10 @@ def select_file():
     )
     return file_path
 
+def clear_screen():
+    # Identifica o sistema operacional e executa o comando apropriado
+    os.system('cls' if os.name == 'nt' else 'clear')
+
 # Função para converter segundos em formato HH:MM:SS
 def seconds_to_hms(seconds):
     hours, remainder = divmod(seconds, 3600)
@@ -81,6 +85,10 @@ def show_completion_message():
 
 # Fluxo principal
 if __name__ == "__main__":
+    clear_screen()
+    print("Programa transcritor de áudio.")
+    print("Desenvolvido por Elvis Cosentino.")
+    print("")
     print("Por favor, selecione um arquivo de vídeo MP4 na janela de seleção de arquivo.")
     video_path = select_file()
     if video_path:
