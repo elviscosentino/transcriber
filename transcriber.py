@@ -12,7 +12,18 @@ import subprocess
 def select_file():
     root = tk.Tk()
     root.withdraw()  # Oculta a janela principal do Tkinter
-    file_path = filedialog.askopenfilename(filetypes=[("MP4 files", "*.mp4")])
+    #file_path = filedialog.askopenfilename(filetypes=[("MP4 files", "*.mp4")])
+    file_path = filedialog.askopenfilename(
+        filetypes=[
+            ("MP4 files", "*.mp4"),
+            ("AVI files", "*.avi"),
+            ("MOV files", "*.mov"),
+            ("MKV files", "*.mkv"),
+            ("Audio files", "*.mp3;*.wav"),
+            ("Image files", "*.png;*.jpg;*.jpeg"),
+            ("All files", "*.*")
+        ]
+    )
     return file_path
 
 # Função para converter segundos em formato HH:MM:SS
