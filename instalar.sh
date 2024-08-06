@@ -17,7 +17,7 @@ pip install ffmpeg-python
 pip install openai-whisper
 
 curl -O https://raw.githubusercontent.com/elviscosentino/transcriber/main/transcriber.py
-chmod +x transcriber.sh
+chmod +x transcriber.py
 
 echo
 echo "============================================================"
