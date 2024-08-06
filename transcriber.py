@@ -89,7 +89,7 @@ if __name__ == "__main__":
     print("Programa transcritor de áudio.")
     print("Desenvolvido por Elvis Cosentino.")
     print("")
-    print("Por favor, selecione um arquivo de vídeo MP4 na janela de seleção de arquivo.")
+    print("Por favor, selecione um arquivo de áudio ou vídeo na janela de seleção de arquivo.")
     video_path = select_file()
     if video_path:
         audio_path = os.path.splitext(video_path)[0] + ".aac"
