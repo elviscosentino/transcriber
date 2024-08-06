@@ -16,7 +16,8 @@ sudo apt install python3-pip
 pip install ffmpeg-python
 pip install openai-whisper
 
-curl -O https://raw.githubusercontent.com/elviscosentino/transcriber/main/transcriber.py
+#curl -O https://raw.githubusercontent.com/elviscosentino/transcriber/main/transcriber.py
+wget https://raw.githubusercontent.com/elviscosentino/transcriber/main/transcriber.py
 chmod +x transcriber.py
 
 echo
